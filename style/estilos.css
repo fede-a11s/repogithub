@@ -1,0 +1,364 @@
+/*codigos en comun con las paginas*/
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgb(8, 58, 169);
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0%;
+}
+.logo_compañia{
+    display: flex;
+    margin-right: 5px;
+}
+.nombre_compañia{
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+body{
+    background-color: rgb(225, 206, 181);
+}
+ul {
+    list-style-type: none;
+    word-spacing: 1cm;
+}
+li{
+    display:inline-block; 
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+h1{
+    text-align: center;
+    margin: 30px 20px 30px 20px;
+}
+h2{
+    display: inline-block;
+}
+.pie_pagina{
+    width: 100%;
+    background-color: rgb(8, 58, 169);
+    padding: 15px;
+}
+/*arranca parte del footer*/
+.pie_pagina .grupo00{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 50px; 
+    color:rgb(255, 255, 255)
+}
+.pie_pagina .grupo00 .box_figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie_pagina .grupo00 .box h2{
+    color: rgb(255, 255, 255);
+    margin-bottom: 14px;
+    font-size: 23px;
+}
+.pie_pagina .grupo00 .box p{
+    color: rgba(255, 255, 255, 0.769);
+    margin-bottom: 10px;
+}
+.pie_pagina .grupo00 .red_social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(250, 250, 250, 0.434);
+    text-align: center;
+}
+.derecho_r{color: rgb(255, 255, 255);}
+
+/*pagina home*/
+.puff-in-center{-webkit-animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both;animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both}
+@-webkit-keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+.home{
+    height: 90vh;
+}
+.home .img_principal{
+    height: 100%;
+}
+.container{
+    margin-bottom: 40px;
+    transition: all 3s;
+}
+/*pagina servicios*/
+.contenedor{
+    margin-left: 120px;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 150px 250px 250px 250px 70px;
+    grid-template-areas:
+    "caja_01 caja_01"
+    "caja_02 caja_03"
+    "caja_04 caja_05"
+    "caja_06 caja_07"
+    "caja_08 caja_08";
+    align-items: center;
+    justify-items: center;
+    row-gap: 40px;
+}
+.caja_01{
+    grid-area: caja_01;
+}
+.caja_02{
+    grid-area: caja_02;
+}
+.caja_03{
+    grid-area: caja_03;
+}
+.caja_04{
+    grid-area: caja_04;
+}
+.caja_05{
+    grid-area: caja_05;
+}
+.caja_06{
+    grid-area: caja_06;
+}
+.caja_07{
+    grid-area: caja_07;
+}
+.pie_pagina{
+    grid-area: caja_08;
+}
+.explicacion{
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 56px;
+}
+.subtitle_de_servicios{
+    margin-top:60px;
+    margin-left: 50px;
+}
+.tip_mantenimiento{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.servi_mant{
+    word-spacing:normal;
+    margin-top: 5px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*pagina nosotros*/
+.sub{
+    text-align: center;
+    word-spacing: normal;
+    display: list-item;
+}
+.explicacion01{
+    line-height: 1.6;
+    text-align: center;
+}
+.diferencia02{
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+.diferencia_deotros{
+    word-spacing:normal;
+    display: list-item;
+}
+.valor{
+    text-align: center;
+    word-spacing: 4cm;
+}
+.valor01{
+    margin-bottom: 30px;
+}
+.p_valores{
+    text-align:center;
+    word-spacing: 4.5cm;
+}
+/*pagina proyectos*/
+.subtitle_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+}
+.proy{    
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 6px ;}
+.contenedor_01{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 250px auto 250px ;
+    grid-template-areas: 
+    "celda01 celda01  celda01" 
+    "celda02 celda03 celda04"
+    "celda05 celda05 celda05"
+    "celda06 celda07 celda08";
+    justify-items: center;
+    align-items: center;
+    row-gap: 30px;
+    transition: all .3s;
+}
+.subtitulo01{
+    grid-area: celda01;
+    margin-top: 40px;
+}
+.img02{
+    grid-area: celda02;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.img03{
+    grid-area: celda03;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.img04{
+    grid-area: celda04;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.subtitulo02{
+    grid-area: celda05;
+    margin-bottom: 40px;
+}
+.img06{
+    grid-area: celda06;
+    margin-bottom: 48px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.img07{
+    grid-area: celda07;
+    margin-bottom: 48px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.img08{
+    grid-area: celda08;
+    margin-bottom: 48px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+/*pagina contacto*/
+.formulario{
+    word-spacing: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.servi_contac{
+    text-align: center;
+}
+.atencion{
+    width: 400px;
+    height: 400px;
+}
+.pagina{
+    display: flex;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: center;
+}
+/*mobile first*/
+@media screen and ( min-width: 320px) and (max-width:768px){
+    /*pagina servicios*/
+    .contenedor{
+        margin-left: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7 ,1fr);
+        grid-template-areas:
+        "caja_01"
+        "caja_02" 
+        "caja_03"
+        "caja_04" 
+        "caja_05"
+        "caja_06" 
+        "caja_07";
+        align-items: center;
+        justify-items: center;
+        padding: 10px;
+    }
+    .caja_06{
+        margin-right:auto;
+    }
+    nav{
+        padding: 10px;
+    }
+    .pie_pagina .grupo00{
+        width: 90%;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-gap: 30px;
+        padding: 30px; 
+        color:rgb(255, 255, 255);
+    }
+    .img_serv{
+        height: 200px;
+        width: 80%;
+        margin: 25px;
+    }
+}
+@media screen and ( min-width: 768px) and (max-width:1024px){
+    /*pagina servicios*/
+    .contenedor{
+        margin-left: 70px;
+        display: grid;
+        grid-template-columns: 60% 30%;
+        grid-template-rows: 150px 250px 250px 250px 70px;
+        grid-template-areas:
+        "caja_01 caja_01"
+        "caja_02 caja_03"
+        "caja_04 caja_05"
+        "caja_06 caja_07"
+        "caja_08 caja_08";
+        align-items: center;
+        justify-items: center;
+        row-gap: 40px;
+    }
+    .img_serv{
+        width:100%;
+        margin-left: 24px;
+    }
+    .caja_01{
+        margin-top: 30px;
+        padding: 15px;
+    }
+}
+@media screen and ( min-width: 1024px){
+    /*pagina servicios*/
+    .contenedor{
+        margin-left: 70px;
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-rows: 150px 250px 250px 250px 70px;
+        grid-template-areas:
+        "caja_01 caja_01"
+        "caja_02 caja_03"
+        "caja_04 caja_05"
+        "caja_06 caja_07"
+        "caja_08 caja_08";
+        align-items: center;
+        justify-items: center;
+        row-gap: 40px;
+    }
+    .caja_01{
+        margin-top: 30px;
+        padding: 15px;
+    }
+}
