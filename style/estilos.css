@@ -12,7 +12,7 @@ header{
     padding: 20px;
     position: sticky;
     top: 0%;
-    z-index:99;
+    z-index:99 
 }
 .logo_compañia{
     display: flex;
@@ -45,12 +45,12 @@ h1{
 h2{
     display: inline-block;
 }
+/*parte del footer*/
 .pie_pagina{
     width: 100%;
     background-color: rgb(8, 58, 169);
     padding: 15px;
 }
-/*parte del footer*/
 .pie_pagina .grupo00{
     width: 100%;
     max-width: 1000px;
@@ -88,33 +88,32 @@ h2{
     background-color: rgba(250, 250, 250, 0.434);
     text-align: center;
 }
-.derecho_r{color: rgb(255, 255, 255);}
-
+.derecho_r{
+    color: rgb(255, 255, 255);
+}
 /*pagina home*/
 .puff-in-center{-webkit-animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both;animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both}
 @-webkit-keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 .img_principal{
     width: 100%;
 }
+
 .container{
     margin-bottom: 10vh;
-    transition: all 3s;
 }
 /*pagina servicios*/
 .contenedor{
     margin-left: 120px;
     display: grid;
     grid-template-columns: 40% 50%;
-    grid-template-rows: 150px 250px 250px 250px 70px;
+    grid-template-rows: 150px 250px 250px 250px 650px;
     grid-template-areas:
     "caja_01 caja_01"
     "caja_02 caja_03"
     "caja_04 caja_05"
-    "caja_06 caja_07"
-    "caja_08 caja_08";
+    "caja_06 caja_07";
     align-items: center;
     justify-items: center;
-    row-gap: 40px;
 }
 .caja_01{
     grid-area: caja_01;
@@ -137,9 +136,6 @@ h2{
 .caja_07{
     grid-area: caja_07;
 }
-.pie_pagina{
-    grid-area: caja_08;
-}
 .explicacion{
     line-height: 1.6;
     text-align: center;
@@ -160,7 +156,6 @@ h2{
     display: flex;
     flex-direction: column;
 }
-
 /*pagina nosotros*/
 .sub{
     text-align: center;
@@ -179,99 +174,81 @@ h2{
 .diferencia_deotros{
     word-spacing:normal;
     display: list-item;
-}
-.valor{
-    text-align: center;
-    word-spacing: 4cm;
+    margin-top: 2px;
 }
 .valor01{
+    display: flex;
+    justify-content: center;
+}
+.valor02{
+    display: grid;
+    grid-template-columns:40% auto 40% ;
+    grid-template-rows: 140px 60px;
+    grid-template-areas: 
+    "imagen1  imagen2 imagen3"
+    "valor1   valor2  valor3";
+    align-items: center;
+    justify-items: center;
     margin-bottom: 30px;
 }
-.p_valores{
-    text-align:center;
-    word-spacing: 4.5cm;
+.img_1{
+    grid-area: imagen1;
+}
+.img_2{
+    grid-area: imagen2;
+}
+.img_3{
+    grid-area: imagen3;
+}
+.valores_1{
+    grid-area: valor1;
+}
+.valores_2{
+    grid-area: valor2;
+}
+.valores_3{
+    grid-area: valor3;
+}
+.imgnosotros{
+    margin:0 36px;
 }
 /*pagina proyectos*/
-.subtitle_1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: flex-end;
-}
-.proy{    
-    line-height: 1.6;
-    text-align: center;
-    margin-bottom: 6px ;}
-.contenedor_01{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 250px auto 250px ;
-    grid-template-areas: 
-    "celda01 celda01  celda01" 
-    "celda02 celda03 celda04"
-    "celda05 celda05 celda05"
-    "celda06 celda07 celda08";
-    justify-items: center;
-    align-items: center;
-    row-gap: 30px;
-    transition: all .3s;
-}
-.subtitulo01{
-    grid-area: celda01;
-    margin-top: 40px;
-}
-.img02{
-    grid-area: celda02;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-}
-.img03{
-    grid-area: celda03;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-}
-.img04{
-    grid-area: celda04;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-}
-.subtitulo02{
-    grid-area: celda05;
-    margin-bottom: 40px;
-}
-.img06{
-    grid-area: celda06;
-    margin-bottom: 48px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-}
-.img07{
-    grid-area: celda07;
-    margin-bottom: 48px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-}
-.img08{
-    grid-area: celda08;
-    margin-bottom: 48px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+.col-lg-3{
+    margin: 0 !important;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
 /*pagina contacto*/
-.formulario{
-    word-spacing: normal;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 17px;
-    margin-top: 10px;
+.formulario_contac{
+    width: 460px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.16);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    margin-bottom: 100px;
 }
-.servi_contac{
+.formulario_contac .Subtitle{
+    margin-bottom: 10px;
+    align-items:center;
+    font-size: 32px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.lista1, label{
+    width: 100%;
+    word-spacing: 0;
+    margin-top: 1%;
+}
+.inf_contac{
     text-align: center;
-}
-.atencion{
-    width: 400px;
-    height: 400px;
-}
-.pagina{
-    display: flex;
-    align-content: stretch;
-    justify-content: space-around;
-    align-items: center;
 }
 /*mobile first*/
 @media screen and ( min-width: 320px) and (max-width:768px){
@@ -280,20 +257,16 @@ h2{
         width: 100%;
         height: auto;
     }
-    .row .img001{
-        width: 80%;
-        height: 80%;
-        margin-bottom: 20%;
-    }
-    .row .img002{
-        margin-bottom: 20%;
+    .tarjeta{
+        margin-bottom: 10%;
     }
     /*pagina servicios*/
     .contenedor{
+        padding-top: 10%;
         margin-left: 10px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(7 ,1fr);
+        grid-template-rows: 200px 400px auto 240px auto 340px auto ;
         grid-template-areas:
         "caja_01"
         "caja_02" 
@@ -304,10 +277,11 @@ h2{
         "caja_07";
         align-items: center;
         justify-items: center;
-        padding: 10px;
+        row-gap: 20px;
     }
     .caja_06{
         margin-right:auto;
+        margin-bottom: 60px;
     }
     nav{
         padding: 10px;
@@ -324,11 +298,66 @@ h2{
         width: 80%;
         margin: 25px;
     }
+    /*pagina proyectos*/
+    .col-ms-12{
+        margin: 0 !important;
+        padding: auto;
+    }
+    .proy_r{
+        width:100%;
+        padding-left: 25%;
+    }
+    /*pagina nosotros*/
+    .sub{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .explicacion01{
+        padding-left: auto;
+        margin-right: auto;
+    }
+    .diferencia02{
+        margin-right: 8%;
+        padding-left: auto;
+    }
+    .diferencia_deotros{
+        margin-left: 10%;
+        margin-right: 6%;
+    }
+    .diferencia03{
+        margin-bottom: -10%;
+    }
+    .valor01{
+        align-items: center;
+        width: 100%;
+    }
+    .valor02{
+        grid-template-columns: 30% 26% 30%;
+        grid-template-rows: 160px auto;
+        column-gap: 2%;
+        margin-left: auto;
+        width: 100%;
+    }
+    .inf_contac{
+        padding: 10px;
+    }
+    .formulario_contac{
+        width: 90%;
+    }
 }
 @media screen and ( min-width: 768px) and (max-width:1024px){
     /*pagina home*/
     .img_principal{
         width: 100%;
+    }
+    /*pagina proyectos*/
+    .col-md-5{
+        margin: 0 !important;
+        padding: 10%;
+        width: 50%;
+    }
+    .proy_r{
+        width:100%;
     }
     /*pagina servicios*/
     .contenedor{
@@ -354,6 +383,26 @@ h2{
         margin-top: 30px;
         padding: 15px;
     }
+    /*pagina nosotros*/
+    .sub{
+        align-items: center;
+    }
+    .explicacion01{
+        padding: 4%
+    }
+    .diferencia_deotros{
+        margin-left: 6%;
+    }
+    .valor02{
+        column-gap: 20px;
+    }
+    /*pagina contacto*/
+    .inf_contac{
+        padding: 20px;
+    }
+    .formulario_contac{
+        width: 90%;
+    }
 }
 @media screen and ( min-width: 1024px){
     /*pagina servicios*/
@@ -375,5 +424,24 @@ h2{
     .caja_01{
         margin-top: 30px;
         padding: 15px;
+    }
+    /*pagina nosotros*/
+    .diferencia02{
+        margin-right: 40px;
+        margin-bottom: 4%;
+    }
+    .diferencia_deotros{
+        margin-left: 6%;
+    }
+    /*pagina contacto*/
+    .inf_contac{
+        padding: 30px;
+    }
+    .formulario_contac{
+        width: 60%;
+    }
+    /*pagina proyectos*/
+    .proy_r{
+        width: 100%;
     }
 }

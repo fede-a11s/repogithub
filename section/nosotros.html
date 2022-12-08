@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo_empresa_ico.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/estilos.css">
     <script src="https://kit.fontawesome.com/d00d42c185.js" crossorigin="anonymous"></script>
@@ -11,56 +12,79 @@
 </head>
 <body>
     <header>
-        <a class="logo_compañia" href="">
+        <a class="logo_compañia" href="../index.html">
             <img src="../img/logo_empresa.png" alt="logo de la compañia">
             <h2 class="nombre_compañia">Painex</h2>
         </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="proyectos.html">Proyectos</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../section/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../section/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../section/proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../section/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <section class="sub">
             <h1>Quienes somos?</h1>
-            <p class="explicacion01"><strong>Somos una empresa Argentina dedicada a ofrecer soluciones a pequeñas y grandes empresas.</strong></p>
-            <p>Contamos con personal altamente capacitado para ofrecer las mejores soluciones a nuestros clientes a la medida de sus necesidades.</p>
-            <p >Nuestro principal objetivo es obtener la completa satisfacción de cada cliente que atendemos, a través de un trato personalizado.</p>
+            <div class="explicacion01">
+                <p><strong>Somos una empresa Argentina dedicada a ofrecer soluciones a pequeñas y grandes empresas.</strong></p>
+                <p>Contamos con personal altamente capacitado para ofrecer las mejores soluciones a nuestros clientes a la medida de sus necesidades.</p>
+                <p>Nuestro principal objetivo es obtener la completa satisfacción de cada cliente que atendemos, a través de un trato personalizado.</p>
+            </div>
         </section>
         <Section class="diferencia02">
             <H2>¿Que nos diferencia de otras empresas en el sector?</H2>
             <p>Somos una empresa que se encuentra ubicada en Argentina , contamos con un exelente equipo de ingenieros y tecnicos que trabajan en conjunto para sastifacer la necesidades del cliente.</p>
-            <ul>
+            <ul class="diferencia03">
                 <li class="diferencia_deotros">Contamos con técnicos y ingenieros cualificados para la ejecucion.</li>
                 <li class="diferencia_deotros">Inplementamos un sistema de gestion eficaz acorde al tiempo del cliente.</li>
                 <li class="diferencia_deotros">Capacitar constantemente a nuestros clientes.</li>
                 <li class="diferencia_deotros">Respetamos las normas de calidad y seguridad.</li>
             </ul>
         </Section>
-        <section class="valor">
+        <section>
             <div class="valor01">
                 <h3>Valores</h3>
             </div>
-            <img src="../img/seguridad.png" alt="seguridad">
-            <img src="../img/compromiso.png" alt="compromiso">
-            <img src="../img/engranajes.png" alt="integridad">
-            <div class="valor01">
-                <p>Seguridad Compromiso Integridad</p>
+            <div class="valor02">
+                <div class="img_1">
+                    <img src="../img/seguridad.png" class="imgnosotros" alt="seguridad"></li>
+                </div>
+                <div class="valores_1">
+                    <p>Compromiso</p>
+                </div>
+                <div class="img_2">
+                    <img src="../img/compromiso.png" class="imgnosotros" alt="compromiso"></li>
+                </div>
+                <div class="valores_2">
+                    <p>Seguridad</p>
+                </div>
+                <div class="img_3">
+                    <img src="../img/engranajes.png" class="imgnosotros" alt="integridad"></li>
+                </div>
+                <div class="valores_3">
+                    <p>Integridad</p>
+                </div>
             </div>
         </section>
     </main>
@@ -68,9 +92,8 @@
         <div class="grupo00">
             <div class="box_figure">
                 <figure>
-                    <a href="#">
+                    <a href="../index.html">
                         <img src="../img/logo_empresa01.PNG" alt="logo_compañia">
-                    
                     </a>
                 </figure>
             </div>
@@ -82,9 +105,9 @@
             <div class="box">
                 <h2>Nuestras Redes</h2>
                 <div class="red_social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#"class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-whatsapp"></a>
+                    <a href="https://es-la.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.whatsapp.com/?lang=es" target="_blank" class="fa fa-whatsapp"></a>
                 </div>
             </div>
         </div>
