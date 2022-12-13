@@ -1,0 +1,36 @@
+header{
+    background-color: $maincolor;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0%;
+    z-index:99;
+    
+    
+    .logo_compañia{
+        display: flex;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+    .nombre_compañia{
+        display: flex;
+        color: $letraprincipalcolor;
+        align-items: center;
+    }
+    ul {
+        list-style-type: none;
+        word-spacing: 1cm;
+        
+        li{
+            display:inline-block; 
+            
+            a{
+                text-decoration: none;
+                color: $letraprincipalcolor;
+            }
+        }
+    }
+}

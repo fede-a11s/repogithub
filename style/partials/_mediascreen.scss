@@ -1,0 +1,194 @@
+@media screen and ( min-width: 320px) and (max-width:768px){
+    /*pagina home*/
+    .img_principal{
+        width: 100%;
+        height: auto;
+    }
+    .tarjeta{
+        margin-bottom: 10%;
+    }
+    /*pagina servicios*/
+    .contenedor{
+        padding-top: 10%;
+        margin-left: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 400px auto 240px auto 340px auto ;
+        grid-template-areas:
+        "caja_01"
+        "caja_02" 
+        "caja_03"
+        "caja_04" 
+        "caja_05"
+        "caja_06" 
+        "caja_07";
+        align-items: center;
+        justify-items: center;
+        row-gap: 20px;
+    }
+    .caja_06{
+        margin-right:auto;
+        margin-bottom: 60px;
+    }
+    nav{
+        padding: 10px;
+    }
+    .pie_pagina .grupo00{
+        width: 90%;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-gap: 30px;
+        padding: 30px; 
+        color:rgb(255, 255, 255);
+    }
+    .img_serv{
+        height: 200px;
+        width: 80%;
+        margin: 25px;
+    }
+    /*pagina proyectos*/
+    .col-ms-12{
+        margin: 0 !important;
+        padding: auto;
+    }
+    .proy_r{
+        width:100%;
+        padding-left: 25%;
+    }
+    /*pagina nosotros*/
+    .sub{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .explicacion01{
+        padding-left: auto;
+        margin-right: auto;
+    }
+    .diferencia02{
+        margin-right: 8%;
+        padding-left: auto;
+    }
+    .diferencia_deotros{
+        margin-left: 10%;
+        margin-right: 6%;
+    }
+    .diferencia03{
+        margin-bottom: -10%;
+    }
+    .valor01{
+        align-items: center;
+        width: 100%;
+    }
+    .valor02{
+        grid-template-columns: 30% 26% 30%;
+        grid-template-rows: 160px auto;
+        column-gap: 2%;
+        margin-left: auto;
+        width: 100%;
+    }
+    .inf_contac{
+        padding: 10px;
+    }
+    .formulario_contac{
+        width: 90%;
+    }
+}
+@media screen and ( min-width: 768px) and (max-width:1024px){
+    /*pagina home*/
+    .img_principal{
+        width: 100%;
+    }
+    /*pagina proyectos*/
+    .col-md-5{
+        margin: 0 !important;
+        padding: 10%;
+        width: 50%;
+    }
+    .proy_r{
+        width:100%;
+    }
+    /*pagina servicios*/
+    .contenedor{
+        margin-left: 70px;
+        display: grid;
+        grid-template-columns: 60% 30%;
+        grid-template-rows: 150px 250px 250px 250px 70px;
+        grid-template-areas:
+        "caja_01 caja_01"
+        "caja_02 caja_03"
+        "caja_04 caja_05"
+        "caja_06 caja_07"
+        "caja_08 caja_08";
+        align-items: center;
+        justify-items: center;
+        row-gap: 40px;
+    }
+    .img_serv{
+        width:100%;
+        margin-left: 24px;
+    }
+    .caja_01{
+        margin-top: 30px;
+        padding: 15px;
+    }
+    /*pagina nosotros*/
+    .sub{
+        align-items: center;
+    }
+    .explicacion01{
+        padding: 4%
+    }
+    .diferencia_deotros{
+        margin-left: 6%;
+    }
+    .valor02{
+        column-gap: 20px;
+    }
+    /*pagina contacto*/
+    .inf_contac{
+        padding: 20px;
+    }
+    .formulario_contac{
+        width: 90%;
+    }
+}
+@media screen and ( min-width: 1024px){
+    /*pagina servicios*/
+    .contenedor{
+        margin-left: 70px;
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-rows: 150px 250px 250px 250px 70px;
+        grid-template-areas:
+        "caja_01 caja_01"
+        "caja_02 caja_03"
+        "caja_04 caja_05"
+        "caja_06 caja_07"
+        "caja_08 caja_08";
+        align-items: center;
+        justify-items: center;
+        row-gap: 40px;
+    }
+    .caja_01{
+        margin-top: 30px;
+        padding: 15px;
+    }
+    /*pagina nosotros*/
+    .diferencia02{
+        margin-right: 40px;
+        margin-bottom: 4%;
+    }
+    .diferencia_deotros{
+        margin-left: 6%;
+    }
+    /*pagina contacto*/
+    .inf_contac{
+        padding: 30px;
+    }
+    .formulario_contac{
+        width: 60%;
+    }
+    /*pagina proyectos*/
+    .proy_r{
+        width: 100%;
+    }
+}

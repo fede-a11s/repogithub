@@ -1,447 +1,511 @@
-/*codigos en comun con las paginas*/
-*{
-    padding: 0;
-    margin: 0;
-}
-header{
-    background-color: rgb(8, 58, 169);
-    display: flex;
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    position: sticky;
-    top: 0%;
-    z-index:99 
-}
-.logo_compañia{
-    display: flex;
-    margin-right: 5px;
-}
-.nombre_compañia{
-    display: flex;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    align-items: center;
-}
-body{
-    background-color: rgb(225, 206, 181);
-}
-ul {
-    list-style-type: none;
-    word-spacing: 1cm;
-}
-li{
-    display:inline-block; 
-}
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-h1{
-    text-align: center;
-    margin: 30px 20px 30px 20px;
-}
-h2{
-    display: inline-block;
-}
-/*parte del footer*/
-.pie_pagina{
-    width: 100%;
-    background-color: rgb(8, 58, 169);
-    padding: 15px;
-}
-.pie_pagina .grupo00{
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    grid-gap: 50px; 
-    color:rgb(255, 255, 255)
-}
-.pie_pagina .grupo00 .box_figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@charset "UTF-8";
+body {
+  background-color: rgb(225, 206, 181);
 }
 
-.pie_pagina .grupo00 .box h2{
-    color: rgb(255, 255, 255);
-    margin-bottom: 14px;
-    font-size: 23px;
-}
-.pie_pagina .grupo00 .box p{
-    color: rgba(255, 255, 255, 0.769);
-    margin-bottom: 10px;
-}
-.pie_pagina .grupo00 .red_social a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    margin-right: 10px;
-    color: rgb(255, 255, 255);
-    background-color: rgba(250, 250, 250, 0.434);
-    text-align: center;
-}
-.derecho_r{
-    color: rgb(255, 255, 255);
-}
-/*pagina home*/
-.puff-in-center{-webkit-animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both;animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both}
-@-webkit-keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
-.img_principal{
-    width: 100%;
+/*seccion home*/
+.puff-in-center {
+  -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
-.container{
-    margin-bottom: 10vh;
+@-webkit-keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
-/*pagina servicios*/
-.contenedor{
-    margin-left: 120px;
+@keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.img_principal {
+  width: 100%;
+}
+
+.container {
+  margin-bottom: 10vh;
+}
+
+/*seccion contacto*/
+.inf_contac {
+  text-align: center;
+}
+.inf_contac h2 {
+  display: inline-block;
+}
+
+.formulario_contac {
+  width: 460px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.16);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+  margin-bottom: 100px;
+}
+.formulario_contac ul {
+  list-style-type: none;
+  word-spacing: 1cm;
+}
+.formulario_contac ul .lista1, .formulario_contac ul label {
+  width: 100%;
+  word-spacing: 0;
+  margin-top: 1%;
+}
+.formulario_contac ul input, .formulario_contac ul textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/*seccion nosotros*/
+.sub {
+  text-align: center;
+  word-spacing: normal;
+  display: list-item;
+}
+.sub h1 {
+  text-align: center;
+  margin: 30px 20px 30px 20px;
+}
+.sub .explicacion01 {
+  line-height: 1.6;
+  text-align: center;
+}
+
+.diferencia02 {
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+.diferencia02 h2 {
+  display: inline-block;
+}
+.diferencia02 ul {
+  list-style-type: none;
+  word-spacing: 1cm;
+}
+.diferencia02 ul li {
+  display: inline-block;
+}
+.diferencia02 ul .diferencia_deotros {
+  word-spacing: normal;
+  display: list-item;
+  margin-top: 2px;
+}
+
+.valor01 {
+  display: flex;
+  justify-content: center;
+}
+
+.valor02 {
+  display: grid;
+  grid-template-columns: 40% auto 40%;
+  grid-template-rows: 140px 60px;
+  grid-template-areas: "imagen1  imagen2 imagen3" "valor1   valor2  valor3";
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+.valor02 .img_1 {
+  grid-area: imagen1;
+}
+.valor02 .img_2 {
+  grid-area: imagen2;
+}
+.valor02 .img_3 {
+  grid-area: imagen3;
+}
+.valor02 .valores_1 {
+  grid-area: valor1;
+}
+.valor02 .valores_2 {
+  grid-area: valor2;
+}
+.valor02 .valores_3 {
+  grid-area: valor3;
+}
+.valor02 .imgnosotros {
+  margin: 0 36px;
+}
+
+/*seccion proyectos*/
+.col-lg-3 {
+  margin: 0 !important;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+/*seccion servicios*/
+.contenedor {
+  margin-left: 120px;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  grid-template-rows: 150px 250px 250px 250px 650px;
+  grid-template-areas: "caja_01 caja_01" "caja_02 caja_03" "caja_04 caja_05" "caja_06 caja_07";
+  align-items: center;
+  justify-items: center;
+}
+.contenedor .caja_01 {
+  grid-area: caja_01;
+}
+.contenedor .caja_01 h1 {
+  text-align: center;
+  margin: 30px 20px 30px 20px;
+}
+.contenedor .caja_01 .explicacion {
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 56px;
+}
+.contenedor .caja_02 {
+  grid-area: caja_02;
+}
+.contenedor .caja_02 h2 {
+  display: inline-block;
+}
+.contenedor .caja_02 h2 .subtitle_de_servicios {
+  margin-top: 60px;
+  margin-left: 50px;
+}
+.contenedor .caja_02 ul {
+  list-style-type: none;
+  word-spacing: 1cm;
+}
+.contenedor .caja_02 ul .servi_mant {
+  word-spacing: normal;
+  margin-top: 5px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor .caja_02 ul li {
+  display: inline-block;
+}
+.contenedor .caja_03 {
+  grid-area: caja_03;
+}
+.contenedor .caja_04 {
+  grid-area: caja_04;
+}
+.contenedor .caja_04 .subtitle_de_servicios {
+  margin-top: 60px;
+  margin-left: 50px;
+}
+.contenedor .caja_04 .servi_mant {
+  word-spacing: normal;
+  margin-top: 5px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor .caja_05 {
+  grid-area: caja_05;
+}
+.contenedor .caja_06 {
+  grid-area: caja_06;
+}
+.contenedor .caja_06 .subtitle_de_servicios {
+  margin-top: 60px;
+  margin-left: 50px;
+}
+.contenedor .caja_06 .tip_mantenimiento {
+  margin-top: 5px;
+  margin-left: 50px;
+}
+.contenedor .caja_06 .servi_mant {
+  word-spacing: normal;
+  margin-top: 5px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor .caja_07 {
+  grid-area: caja_07;
+}
+.contenedor h2 {
+  display: inline-block;
+}
+.contenedor h2 .subtitle_de_servicios {
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+header {
+  background-color: rgb(8, 58, 169);
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  z-index: 99;
+}
+header .logo_compañia {
+  display: flex;
+  margin-right: 5px;
+  text-decoration: none;
+}
+header .nombre_compañia {
+  display: flex;
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+header ul {
+  list-style-type: none;
+  word-spacing: 1cm;
+}
+header ul li {
+  display: inline-block;
+}
+header ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.pie_pagina {
+  width: 100%;
+  background-color: rgb(8, 58, 169);
+  padding: 15px;
+}
+.pie_pagina .grupo00 {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  color: rgb(255, 255, 255);
+}
+.pie_pagina .grupo00 .box_figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie_pagina .grupo00 .box h2 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 14px;
+  font-size: 23px;
+}
+.pie_pagina .grupo00 .box p {
+  color: rgba(255, 255, 255, 0.769);
+  margin-bottom: 10px;
+}
+.pie_pagina .grupo00 .red_social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(250, 250, 250, 0.434);
+  text-align: center;
+}
+.pie_pagina .derecho_r {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  /*pagina home*/
+  .img_principal {
+    width: 100%;
+    height: auto;
+  }
+  .tarjeta {
+    margin-bottom: 10%;
+  }
+  /*pagina servicios*/
+  .contenedor {
+    padding-top: 10%;
+    margin-left: 10px;
     display: grid;
-    grid-template-columns: 40% 50%;
-    grid-template-rows: 150px 250px 250px 250px 650px;
-    grid-template-areas:
-    "caja_01 caja_01"
-    "caja_02 caja_03"
-    "caja_04 caja_05"
-    "caja_06 caja_07";
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 400px auto 240px auto 340px auto;
+    grid-template-areas: "caja_01" "caja_02" "caja_03" "caja_04" "caja_05" "caja_06" "caja_07";
     align-items: center;
     justify-items: center;
-}
-.caja_01{
-    grid-area: caja_01;
-}
-.caja_02{
-    grid-area: caja_02;
-}
-.caja_03{
-    grid-area: caja_03;
-}
-.caja_04{
-    grid-area: caja_04;
-}
-.caja_05{
-    grid-area: caja_05;
-}
-.caja_06{
-    grid-area: caja_06;
-}
-.caja_07{
-    grid-area: caja_07;
-}
-.explicacion{
-    line-height: 1.6;
-    text-align: center;
-    margin-bottom: 56px;
-}
-.subtitle_de_servicios{
-    margin-top:60px;
-    margin-left: 50px;
-}
-.tip_mantenimiento{
-    margin-top: 5px;
-    margin-left: 50px;
-}
-.servi_mant{
-    word-spacing:normal;
-    margin-top: 5px;
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
-}
-/*pagina nosotros*/
-.sub{
-    text-align: center;
-    word-spacing: normal;
-    display: list-item;
-}
-.explicacion01{
-    line-height: 1.6;
-    text-align: center;
-}
-.diferencia02{
-    margin-top: 60px;
-    margin-left: 50px;
-    margin-bottom: 100px;
-}
-.diferencia_deotros{
-    word-spacing:normal;
-    display: list-item;
-    margin-top: 2px;
-}
-.valor01{
-    display: flex;
-    justify-content: center;
-}
-.valor02{
-    display: grid;
-    grid-template-columns:40% auto 40% ;
-    grid-template-rows: 140px 60px;
-    grid-template-areas: 
-    "imagen1  imagen2 imagen3"
-    "valor1   valor2  valor3";
-    align-items: center;
-    justify-items: center;
-    margin-bottom: 30px;
-}
-.img_1{
-    grid-area: imagen1;
-}
-.img_2{
-    grid-area: imagen2;
-}
-.img_3{
-    grid-area: imagen3;
-}
-.valores_1{
-    grid-area: valor1;
-}
-.valores_2{
-    grid-area: valor2;
-}
-.valores_3{
-    grid-area: valor3;
-}
-.imgnosotros{
-    margin:0 36px;
-}
-/*pagina proyectos*/
-.col-lg-3{
+    row-gap: 20px;
+  }
+  .caja_06 {
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+  nav {
+    padding: 10px;
+  }
+  .pie_pagina .grupo00 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+  }
+  .img_serv {
+    height: 200px;
+    width: 80%;
+    margin: 25px;
+  }
+  /*pagina proyectos*/
+  .col-ms-12 {
     margin: 0 !important;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-bottom: 30px;
-    padding-top: 20px;
-}
-/*pagina contacto*/
-.formulario_contac{
-    width: 460px;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.16);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 7px;
-    margin-bottom: 100px;
-}
-.formulario_contac .Subtitle{
-    margin-bottom: 10px;
-    align-items:center;
-    font-size: 32px;
-}
-input, textarea{
+    padding: auto;
+  }
+  .proy_r {
     width: 100%;
-    margin-bottom: 20px;
-    padding: 8px;
-    box-sizing: border-box;
-}
-.lista1, label{
+    padding-left: 25%;
+  }
+  /*pagina nosotros*/
+  .sub {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .explicacion01 {
+    padding-left: auto;
+    margin-right: auto;
+  }
+  .diferencia02 {
+    margin-right: 8%;
+    padding-left: auto;
+  }
+  .diferencia_deotros {
+    margin-left: 10%;
+    margin-right: 6%;
+  }
+  .diferencia03 {
+    margin-bottom: -10%;
+  }
+  .valor01 {
+    align-items: center;
     width: 100%;
-    word-spacing: 0;
-    margin-top: 1%;
+  }
+  .valor02 {
+    grid-template-columns: 30% 26% 30%;
+    grid-template-rows: 160px auto;
+    -moz-column-gap: 2%;
+         column-gap: 2%;
+    margin-left: auto;
+    width: 100%;
+  }
+  .inf_contac {
+    padding: 10px;
+  }
+  .formulario_contac {
+    width: 90%;
+  }
 }
-.inf_contac{
-    text-align: center;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*pagina home*/
+  .img_principal {
+    width: 100%;
+  }
+  /*pagina proyectos*/
+  .col-md-5 {
+    margin: 0 !important;
+    padding: 10%;
+    width: 50%;
+  }
+  .proy_r {
+    width: 100%;
+  }
+  /*pagina servicios*/
+  .contenedor {
+    margin-left: 70px;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    grid-template-rows: 150px 250px 250px 250px 70px;
+    grid-template-areas: "caja_01 caja_01" "caja_02 caja_03" "caja_04 caja_05" "caja_06 caja_07" "caja_08 caja_08";
+    align-items: center;
+    justify-items: center;
+    row-gap: 40px;
+  }
+  .img_serv {
+    width: 100%;
+    margin-left: 24px;
+  }
+  .caja_01 {
+    margin-top: 30px;
+    padding: 15px;
+  }
+  /*pagina nosotros*/
+  .sub {
+    align-items: center;
+  }
+  .explicacion01 {
+    padding: 4%;
+  }
+  .diferencia_deotros {
+    margin-left: 6%;
+  }
+  .valor02 {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  /*pagina contacto*/
+  .inf_contac {
+    padding: 20px;
+  }
+  .formulario_contac {
+    width: 90%;
+  }
 }
-/*mobile first*/
-@media screen and ( min-width: 320px) and (max-width:768px){
-    /*pagina home*/
-    .img_principal{
-        width: 100%;
-        height: auto;
-    }
-    .tarjeta{
-        margin-bottom: 10%;
-    }
-    /*pagina servicios*/
-    .contenedor{
-        padding-top: 10%;
-        margin-left: 10px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 400px auto 240px auto 340px auto ;
-        grid-template-areas:
-        "caja_01"
-        "caja_02" 
-        "caja_03"
-        "caja_04" 
-        "caja_05"
-        "caja_06" 
-        "caja_07";
-        align-items: center;
-        justify-items: center;
-        row-gap: 20px;
-    }
-    .caja_06{
-        margin-right:auto;
-        margin-bottom: 60px;
-    }
-    nav{
-        padding: 10px;
-    }
-    .pie_pagina .grupo00{
-        width: 90%;
-        grid-template-columns: repeat(1 , 1fr);
-        grid-gap: 30px;
-        padding: 30px; 
-        color:rgb(255, 255, 255);
-    }
-    .img_serv{
-        height: 200px;
-        width: 80%;
-        margin: 25px;
-    }
-    /*pagina proyectos*/
-    .col-ms-12{
-        margin: 0 !important;
-        padding: auto;
-    }
-    .proy_r{
-        width:100%;
-        padding-left: 25%;
-    }
-    /*pagina nosotros*/
-    .sub{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .explicacion01{
-        padding-left: auto;
-        margin-right: auto;
-    }
-    .diferencia02{
-        margin-right: 8%;
-        padding-left: auto;
-    }
-    .diferencia_deotros{
-        margin-left: 10%;
-        margin-right: 6%;
-    }
-    .diferencia03{
-        margin-bottom: -10%;
-    }
-    .valor01{
-        align-items: center;
-        width: 100%;
-    }
-    .valor02{
-        grid-template-columns: 30% 26% 30%;
-        grid-template-rows: 160px auto;
-        column-gap: 2%;
-        margin-left: auto;
-        width: 100%;
-    }
-    .inf_contac{
-        padding: 10px;
-    }
-    .formulario_contac{
-        width: 90%;
-    }
-}
-@media screen and ( min-width: 768px) and (max-width:1024px){
-    /*pagina home*/
-    .img_principal{
-        width: 100%;
-    }
-    /*pagina proyectos*/
-    .col-md-5{
-        margin: 0 !important;
-        padding: 10%;
-        width: 50%;
-    }
-    .proy_r{
-        width:100%;
-    }
-    /*pagina servicios*/
-    .contenedor{
-        margin-left: 70px;
-        display: grid;
-        grid-template-columns: 60% 30%;
-        grid-template-rows: 150px 250px 250px 250px 70px;
-        grid-template-areas:
-        "caja_01 caja_01"
-        "caja_02 caja_03"
-        "caja_04 caja_05"
-        "caja_06 caja_07"
-        "caja_08 caja_08";
-        align-items: center;
-        justify-items: center;
-        row-gap: 40px;
-    }
-    .img_serv{
-        width:100%;
-        margin-left: 24px;
-    }
-    .caja_01{
-        margin-top: 30px;
-        padding: 15px;
-    }
-    /*pagina nosotros*/
-    .sub{
-        align-items: center;
-    }
-    .explicacion01{
-        padding: 4%
-    }
-    .diferencia_deotros{
-        margin-left: 6%;
-    }
-    .valor02{
-        column-gap: 20px;
-    }
-    /*pagina contacto*/
-    .inf_contac{
-        padding: 20px;
-    }
-    .formulario_contac{
-        width: 90%;
-    }
-}
-@media screen and ( min-width: 1024px){
-    /*pagina servicios*/
-    .contenedor{
-        margin-left: 70px;
-        display: grid;
-        grid-template-columns: 50% auto;
-        grid-template-rows: 150px 250px 250px 250px 70px;
-        grid-template-areas:
-        "caja_01 caja_01"
-        "caja_02 caja_03"
-        "caja_04 caja_05"
-        "caja_06 caja_07"
-        "caja_08 caja_08";
-        align-items: center;
-        justify-items: center;
-        row-gap: 40px;
-    }
-    .caja_01{
-        margin-top: 30px;
-        padding: 15px;
-    }
-    /*pagina nosotros*/
-    .diferencia02{
-        margin-right: 40px;
-        margin-bottom: 4%;
-    }
-    .diferencia_deotros{
-        margin-left: 6%;
-    }
-    /*pagina contacto*/
-    .inf_contac{
-        padding: 30px;
-    }
-    .formulario_contac{
-        width: 60%;
-    }
-    /*pagina proyectos*/
-    .proy_r{
-        width: 100%;
-    }
-}
+@media screen and (min-width: 1024px) {
+  /*pagina servicios*/
+  .contenedor {
+    margin-left: 70px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 150px 250px 250px 250px 70px;
+    grid-template-areas: "caja_01 caja_01" "caja_02 caja_03" "caja_04 caja_05" "caja_06 caja_07" "caja_08 caja_08";
+    align-items: center;
+    justify-items: center;
+    row-gap: 40px;
+  }
+  .caja_01 {
+    margin-top: 30px;
+    padding: 15px;
+  }
+  /*pagina nosotros*/
+  .diferencia02 {
+    margin-right: 40px;
+    margin-bottom: 4%;
+  }
+  .diferencia_deotros {
+    margin-left: 6%;
+  }
+  /*pagina contacto*/
+  .inf_contac {
+    padding: 30px;
+  }
+  .formulario_contac {
+    width: 60%;
+  }
+  /*pagina proyectos*/
+  .proy_r {
+    width: 100%;
+  }
+}/*# sourceMappingURL=estilos.css.map */
