@@ -251,7 +251,7 @@ body {
   margin-left: 50px;
 }
 
-header {
+* header {
   background-color: rgb(8, 58, 169);
   display: flex;
   height: 70px;
@@ -263,24 +263,24 @@ header {
   top: 0%;
   z-index: 99;
 }
-header .logo_compañia {
+* header .logo_compañia {
   display: flex;
   margin-right: 5px;
   text-decoration: none;
 }
-header .nombre_compañia {
+* header .nombre_compañia {
   display: flex;
   color: rgb(255, 255, 255);
   align-items: center;
 }
-header ul {
+* header ul {
   list-style-type: none;
   word-spacing: 1cm;
 }
-header ul li {
+* header ul li {
   display: inline-block;
 }
-header ul li a {
+* header ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
